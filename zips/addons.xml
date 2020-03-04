@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.johnsonwizard" name="[COLOR limegreen][B]Johnson[/B][/COLOR]Wizard" version="1.0.1" provider-name="lexguy2007">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen][B]Johnson[/B][/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen][B]Johnson[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/lexguy2007/plugin.program.johnsonwizard/</source>
+        <news>
+	1.0.1
+	 - Minor Update
+        1.0.0
+         - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.samplerepo" name="Sample Repo" version="1.0" provider-name="lexguy2007">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/lexguy2007/repository.samplerepo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lexguy2007/repository.samplerepo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lexguy2007/repository.samplerepo/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>repository.sample</summary>
+        <description>This is a sample repository</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
